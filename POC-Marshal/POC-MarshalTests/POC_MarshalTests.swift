@@ -7,6 +7,9 @@
 //
 
 import XCTest
+
+
+
 @testable import POC_Marshal
 
 class POC_MarshalTests: XCTestCase {
@@ -14,6 +17,8 @@ class POC_MarshalTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+       
     }
     
     override func tearDown() {
@@ -33,4 +38,32 @@ class POC_MarshalTests: XCTestCase {
         }
     }
     
+    
+  
+    
+}
+
+private struct Person {
+    var firstName: String!
+    var lastName: String!
+    var score: Int!
+    var address: Address?
+}
+
+private struct Address {
+    var street: String!
+    var city: String!
+}
+private class DeserializationContext {
+    func newPerson() -> Person {
+        return Person()
+    }
+    
+    func newAddress() -> Address {
+        return Address()
+    }
+    
+    //    func newAgedPerson() -> AgedPerson {
+    //        return AgedPerson()
+    //    }
 }
