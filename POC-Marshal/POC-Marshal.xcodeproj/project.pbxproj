@@ -16,6 +16,10 @@
 		0072D2F01F0CC7A00071EB42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0072D2EE1F0CC7A00071EB42 /* LaunchScreen.storyboard */; };
 		0072D2FB1F0CC7A10071EB42 /* POC_MarshalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0072D2FA1F0CC7A10071EB42 /* POC_MarshalTests.swift */; };
 		0072D3061F0CC7A10071EB42 /* POC_MarshalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0072D3051F0CC7A10071EB42 /* POC_MarshalUITests.swift */; };
+		0094BD0D1F34625C00334976 /* People+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094BD091F34625C00334976 /* People+CoreDataClass.swift */; };
+		0094BD0E1F34625C00334976 /* People+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094BD0A1F34625C00334976 /* People+CoreDataProperties.swift */; };
+		0094BD0F1F34625C00334976 /* Address+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094BD0B1F34625C00334976 /* Address+CoreDataClass.swift */; };
+		0094BD101F34625C00334976 /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094BD0C1F34625C00334976 /* Address+CoreDataProperties.swift */; };
 		00F99C991F0E4AE600A1A50A /* People.json in Resources */ = {isa = PBXBuildFile; fileRef = 00F99C981F0E4AE600A1A50A /* People.json */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,10 @@
 		0072D3011F0CC7A10071EB42 /* POC-MarshalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "POC-MarshalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0072D3051F0CC7A10071EB42 /* POC_MarshalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POC_MarshalUITests.swift; sourceTree = "<group>"; };
 		0072D3071F0CC7A10071EB42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0094BD091F34625C00334976 /* People+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "People+CoreDataClass.swift"; path = "DataModel/People+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0094BD0A1F34625C00334976 /* People+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "People+CoreDataProperties.swift"; path = "DataModel/People+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0094BD0B1F34625C00334976 /* Address+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Address+CoreDataClass.swift"; path = "DataModel/Address+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0094BD0C1F34625C00334976 /* Address+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Address+CoreDataProperties.swift"; path = "DataModel/Address+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		00F99C981F0E4AE600A1A50A /* People.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = People.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +97,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0060441F1F344D81008A6E04 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				0094BD091F34625C00334976 /* People+CoreDataClass.swift */,
+				0094BD0A1F34625C00334976 /* People+CoreDataProperties.swift */,
+				0094BD0B1F34625C00334976 /* Address+CoreDataClass.swift */,
+				0094BD0C1F34625C00334976 /* Address+CoreDataProperties.swift */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
 		0072D2D61F0CC7A00071EB42 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +132,7 @@
 		0072D2E11F0CC7A00071EB42 /* POC-Marshal */ = {
 			isa = PBXGroup;
 			children = (
+				0060441F1F344D81008A6E04 /* DataModel */,
 				00F99C981F0E4AE600A1A50A /* People.json */,
 				0072D2E21F0CC7A00071EB42 /* AppDelegate.swift */,
 				0072D2E41F0CC7A00071EB42 /* ViewController.swift */,
@@ -299,8 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0094BD0E1F34625C00334976 /* People+CoreDataProperties.swift in Sources */,
 				0072D2E51F0CC7A00071EB42 /* ViewController.swift in Sources */,
 				0072D2E31F0CC7A00071EB42 /* AppDelegate.swift in Sources */,
+				0094BD101F34625C00334976 /* Address+CoreDataProperties.swift in Sources */,
+				0094BD0D1F34625C00334976 /* People+CoreDataClass.swift in Sources */,
+				0094BD0F1F34625C00334976 /* Address+CoreDataClass.swift in Sources */,
 				0072D2EB1F0CC7A00071EB42 /* POC_Marshal.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
