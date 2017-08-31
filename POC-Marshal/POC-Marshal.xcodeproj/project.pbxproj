@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0025241E1F0CCE5D00787E73 /* Marshal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0025241D1F0CCE5D00787E73 /* Marshal.framework */; };
+		002402771F582F4B00941488 /* MOGENDataModel in Resources */ = {isa = PBXBuildFile; fileRef = 002402761F582F4B00941488 /* MOGENDataModel */; };
 		0072D2E31F0CC7A00071EB42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0072D2E21F0CC7A00071EB42 /* AppDelegate.swift */; };
 		0072D2E51F0CC7A00071EB42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0072D2E41F0CC7A00071EB42 /* ViewController.swift */; };
 		0072D2E81F0CC7A00071EB42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0072D2E61F0CC7A00071EB42 /* Main.storyboard */; };
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		002402761F582F4B00941488 /* MOGENDataModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MOGENDataModel; sourceTree = SOURCE_ROOT; };
 		0025241D1F0CCE5D00787E73 /* Marshal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Marshal.framework; path = Carthage/Build/iOS/Marshal.framework; sourceTree = "<group>"; };
 		0072D2DF1F0CC7A00071EB42 /* POC-Marshal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POC-Marshal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0072D2E21F0CC7A00071EB42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0025241E1F0CCE5D00787E73 /* Marshal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +132,7 @@
 		0072D2E11F0CC7A00071EB42 /* POC-Marshal */ = {
 			isa = PBXGroup;
 			children = (
+				002402761F582F4B00941488 /* MOGENDataModel */,
 				0060441F1F344D81008A6E04 /* DataModel */,
 				00F99C981F0E4AE600A1A50A /* People.json */,
 				0072D2E21F0CC7A00071EB42 /* AppDelegate.swift */,
@@ -276,6 +277,7 @@
 			files = (
 				00F99C991F0E4AE600A1A50A /* People.json in Resources */,
 				0072D2F01F0CC7A00071EB42 /* LaunchScreen.storyboard in Resources */,
+				002402771F582F4B00941488 /* MOGENDataModel in Resources */,
 				0072D2ED1F0CC7A00071EB42 /* Assets.xcassets in Resources */,
 				0072D2E81F0CC7A00071EB42 /* Main.storyboard in Resources */,
 			);
@@ -304,13 +306,12 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Marshal.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\nmogenerator -m POC-Marshal/POC_Marshal.xcdatamodeld -O DataModel --swift --template-var arc=true\n";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\nmogenerator -m POC-Marshal/POC_Marshal.xcdatamodeld -O MOGENDataModel --swift --template-var arc=true\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
