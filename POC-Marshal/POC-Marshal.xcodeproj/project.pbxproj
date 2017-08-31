@@ -310,7 +310,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\nmogenerator -m POC-Marshal/POC_Marshal.xcdatamodeld -O DataModel --swift --template-var arc=true\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
